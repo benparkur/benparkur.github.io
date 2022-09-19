@@ -3,35 +3,106 @@
 
 <head>
     <title> Gary's website </title>
+    <style>
+        body {
+            background: rgb(125, 205, 145);
+            color: rgb(45, 45, 45);
+            padding: 10px;
+            font-family: arial;
+        }
+        #all-contents {
+          max-width: 800px;
+            margin: auto;
+        }
+     
+        /* navigation menu */
+        nav {
+            background: rgb(239, 41, 41);
+           margin: 0 auto;
+             margin-bottom: 20px;
+            display: flex;
+            padding: 10px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: white;
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+     
+        /* main container area beneath menu */
+        main {
+            background: rgb(245, 238, 219);
+            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 200px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px silver ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }
+     </style>
 </head>
 
 <body>
-    <div>
+    <div id="all-contents">
         <nav>
-
+            <h1>Gaming Site</h1>
+            <ul id="nav-ul" >
+                <li class="nav-li" >
+                    <a href="index.html"> Home </a>
+                </li>
+                <li class="nav-li">
+                    <a href="portfolio.html"> Portfolio </a>
+                </li>
+            </ul>
         </nav>
 
         <main>
             <!-- Sidebar section -->
-            <div>
-
+            <div class="sidebar">
+                <img class="sidebar-img" src="http://images5.fanpop.com/image/photos/28200000/Dragon-dragons-28270304-700-525.jpg">
             </div>
 
             <!-- Content section -->
-            <div>
+            <div class="content">
                 <h2>Gary Monroe</h2>
                 <p> Video Game Designer </p>
+                <!-- Interests section -->
+                <div id="interests"> 
+                  <h3> Best Video Games</h3>  
+                  <ol>
+                    <li>Call of Duty</li>
+                    <li>Roblox</li>
+                    <li>Friday Night Funkin</li>
+                  </ol>
+                </div>
                 
                 
-            </div>
-            <!-- Interests section -->
-            <div> 
-              <h3> Best Video Games</h3>  
-              <ol>
-                <li>Call of Duty</li>
-                <li>Roblox</li>
-                <li>Friday Night Funkin</li>
-              </ol>
             </div>
         </main>
 
