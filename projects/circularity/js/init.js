@@ -37,7 +37,10 @@ var init = function (window) {
         drawCircle()
         drawCircle()
         drawCircle()
-
+        var loopsCompleted = 0;
+        while (loopsCompleted < 10) {
+            
+        }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -90,7 +93,7 @@ var init = function (window) {
             }
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
-        }   
+            
         
         /////////////////////////////////////////////////////////////
         // --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
