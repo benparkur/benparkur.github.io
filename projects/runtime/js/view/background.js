@@ -47,7 +47,7 @@ var background = function (window) {
             moon.scaleY = 1.0;
             background.addChild(moon);
             for (var i = 0; i <= 100; i++) {
-                var circle = draw.star(10, "white", "LightGray", 2);
+                var circle = draw.circle(10, "white", "LightGray", 2);
                 circle.x = canvasWidth * Math.random();
                 circle.y = groundY   * Math.random();
                 background.addChild(circle);
@@ -57,7 +57,10 @@ var background = function (window) {
 
 
             // TODO 4: Part 1 - Add a tree
-
+            tree = draw.bitmap("img/tree.png");
+            tree.x = 10;
+            tree.y = 10;
+            background.addChild(tree);
 
         } // end of render function - DO NOT DELETE
 
